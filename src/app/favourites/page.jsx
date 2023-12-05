@@ -7,7 +7,7 @@ import Link from "next/link";
 import { addFavourite, removeFovouriteNews } from "@/app/store/dataSlice";
 export default function Favourites() {
   const dispatch = useDispatch();
-  const { favouriteNews } = useSelector((state) => state.newsData);
+  const { favouriteNews, newsData } = useSelector((state) => state.newsData);
   const { userData: user } = useSelector((state) => state.auth);
   const isFavorite = (article) => {
     return favouriteNews.some(
@@ -20,7 +20,9 @@ export default function Favourites() {
     >
       {favouriteNews.map((article, index) => (
         <Link
-          href={`/news/${index}`}
+          href={`/news/${newsData.findIndex(
+            (news) => news.title === article.title
+          )}`}
           key={article.title + index}
           className={`bg-white p-4 rounded  cursor-pointer relative`}
         >
