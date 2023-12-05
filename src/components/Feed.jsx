@@ -26,7 +26,6 @@ export default function Feed() {
 
           if (cachedResponse) {
             const newData = await cachedResponse.json();
-            console.log("cached data", newData);
             setData(newData);
             dispatch(addData({ newData }));
           }
