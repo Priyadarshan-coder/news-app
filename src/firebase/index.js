@@ -2,7 +2,6 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
-
 import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -10,14 +9,15 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDhSypubpEKrEKSVrqQ7ewBd8zd-78go_o",
-  authDomain: "news-app-a5021.firebaseapp.com",
-  projectId: "news-app-a5021",
-  storageBucket: "news-app-a5021.appspot.com",
-  messagingSenderId: "68302100393",
-  appId: "1:68302100393:web:987038d42c92898bdcd6b8",
-  measurementId: "G-G4VLGF4MLT",
+  apiKey: "AIzaSyAnR1MNLymefXlXAWM2v23sDh00WFPQun0",
+  authDomain: "news-app-6a8ba.firebaseapp.com",
+  projectId: "news-app-6a8ba",
+  storageBucket: "news-app-6a8ba.appspot.com",
+  messagingSenderId: "539237801273",
+  appId: "1:539237801273:web:817e6db080b66ea787dce8",
+  measurementId: "G-070YP6W0VZ"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

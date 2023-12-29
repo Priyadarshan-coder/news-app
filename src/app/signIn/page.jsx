@@ -28,7 +28,7 @@ export default function SignInPage() {
 
   return (
     <div className="flex h-screen justify-center items-center ">
-      <div className="flex flex-col lg:w-1/5 bg-neutral-600 rounded-xl p-6  text-white text-xl ">
+      <div className="flex flex-col lg:w-1/5 bg-yellow-600 rounded-xl p-6  text-white text-xl ">
         <p className="text-xl">Sign In</p>
         <input
           type="text"
@@ -45,7 +45,7 @@ export default function SignInPage() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button
-          className="bg-emerald-500 rounded-xl text-lg mt-3"
+          className="bg-blue-500 rounded-xl text-lg mt-3"
           onClick={SignIn}
         >
           Sign In

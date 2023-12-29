@@ -18,9 +18,9 @@ export default function Nav() {
       });
   };
   return (
-    <nav className="bg-neutral-800 p-6 text-xl w-full flex justify-between md:px-40 text-white">
+    <nav className="bg-blue-800 p-6 text-xl w-full flex justify-between md:px-40 text-white">
       <Link href={"/"} className="text-2xl text-white font-semibold font-serif">
-        InfoPulse
+        PersonalisedNews
       </Link>
       <div>
         {isUser ? (
