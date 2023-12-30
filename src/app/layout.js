@@ -5,8 +5,8 @@ import ReduxProvider from "./store/Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "InfoPulse",
-  description: "Read the current affairs",
+  title: "PersonalisedNews",
+  description: "Shows current news on your feed",
 };
 
 export default function RootLayout({ children }) {
