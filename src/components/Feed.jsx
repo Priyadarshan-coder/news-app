@@ -35,7 +35,7 @@ export default function Feed() {
             {
               headers: {
                // Authorization: process.env.NEXT_PUBLIC_NEWS_APIKEY,
-                Authorization:190cb26d2281478891856301be1946ef,
+                Authorization:"190cb26d2281478891856301be1946ef",
               },
             }
           );
